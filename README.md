@@ -1,38 +1,109 @@
-# ALX Project 0x14 — Reading API Documentation
 
-## API Overview
-TMDB (The Movie Database) API provides developers with access to a comprehensive, community-driven dataset including metadata for movies, TV shows, actors, images, ratings, and more. With an extensive set of endpoints, you can search, discover, and retrieve detailed information such as cast and crew, trailers, reviews, recommendations, and trending content. :contentReference[oaicite:1]{index=1}
+# 🎬 Movie App
 
-## Version
-### TMDB API Version: **v3** :contentReference[oaicite:2]{index=2}
+A sleek and responsive movie discovery application. This project allows users to browse popular films, view details, and explore trending cinema data powered by a movie database API.
 
-## Available Endpoints
-Here are some of the primary endpoints you can use:
+---
 
-- `/search/movie` – Search movies by keyword  
-- `/movie/{movie_id}` – Get detailed movie data including synopsis, release date, runtime  
-- `/movie/{movie_id}/credits` – Fetch cast and crew information  
-- `/movie/{movie_id}/images` – Retrieve movie posters, backdrops, and stills  
-- `/movie/popular` – List of current popular movies  
-- `/movie/{movie_id}/reviews` – User reviews and ratings  
-- `/movie/{movie_id}/recommendations` – Recommended movies based on a given movie  
-- `/trending/movie/day` – Daily trending media  
-- Authentication & account endpoints (token/session) – Login, get account state  
-- Configuration endpoints – Static lists like languages, available images etc. :contentReference[oaicite:3]{index=3}
+## 🚀 Features
 
-## Request and Response Format
-Typical request (with API key in query):
+- **Browse Movies** – Explore a curated list of popular and trending movies.
+- **Search Functionality** – Find specific titles quickly with an integrated search bar.
+- **Detailed Views** – Access in-depth information including synopses, ratings, and release dates.
+- **Responsive Design** – Fully optimized for mobile, tablet, and desktop.
+- **API Integration** – Real-time data fetching from external movie databases.
 
+---
 
-## Authentication
-- Requests must include your **API key** as a query parameter: `api_key=YOUR_API_KEY`
-- For account-specific methods (rating, account states), you must authenticate via temporary request token or session-based authentication.
-- A bearer token may be required for some protected endpoints. :contentReference[oaicite:5]{index=5}
+## 🛠 Tech Stack
 
-## Error Handling
-Common HTTP error responses:
-- **401 Unauthorized**: Invalid or missing API key
-- **404 Not Found**: Resource not found
-- **429 Too Many Requests**: Rate limited by API
-- **400 Bad Request**: Parameter validation failure
+- **Frontend:** React / Next.js  
+- **Styling:** CSS Modules / Styled Components  
+- **Linting:** ESLint  
+- **Version Control:** Git & GitHub  
 
+---
+
+## 📂 Project Structure
+
+```
+
+movie_app/
+│
+├── alx-movie-app/
+│   ├── components/    # Reusable UI components
+│   ├── interfaces/    # TypeScript interfaces and types
+│   ├── pages/         # Application routes and views
+│   ├── public/        # Static assets (images, icons)
+│   └── styles/        # Global and component-specific styles
+│
+├── .gitignore         # Files ignored by Git
+└── eslint.config.mjs  # ESLint configuration
+
+````
+
+---
+
+## ⚙️ Getting Started
+
+### Prerequisites
+
+Make sure you have the following installed:
+
+- **Node.js** (v18 or higher recommended)
+- **npm** or **yarn**
+
+---
+
+### Installation
+
+#### 1. Clone the repository
+
+```bash
+git clone https://github.com/Hali1439/movie_app.git
+````
+
+#### 2. Navigate to the project directory
+
+```bash
+cd movie_app/alx-movie-app
+```
+
+#### 3. Install dependencies
+
+```bash
+npm install
+```
+
+#### 4. Run the development server
+
+```bash
+npm run dev
+```
+
+Open your browser and visit:
+
+```
+http://localhost:3000
+```
+
+---
+
+## 🤝 Contributing
+
+Contributions are welcome! 🎉
+
+If you’d like to improve the project:
+
+1. Fork the repository
+2. Create a new feature branch
+3. Commit your changes
+4. Submit a Pull Request
+
+---
+
+⭐ If you found this project useful, consider giving it a **star** on GitHub!
+
+```
+
+```
